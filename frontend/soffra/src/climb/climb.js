@@ -1,14 +1,9 @@
 import React from 'react';
-import Header from './header-component';
-import Footer from './footer-component';
-import BreadCrumb from './breadcrumb-component';
 
-const Climb = () => (
-  <div>
-    <Header />
-    <BreadCrumb />
-    <Footer />
-  </div>
-);
+const Climb = () => {
+    return(
+        <h1>Hello</h1>
+    );
+};
 
 export default Climb;

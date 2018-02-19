@@ -54,6 +54,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	cursor:pointer;	
 	outline: none;
+<<<<<<< HEAD
+=======
+    overflow-x: hidden;
+	overflow-y: visible;
+>>>>>>> landing
 }
 body.body_index {
 	background: rgba(0, 0, 0, 0);
@@ -73,8 +78,7 @@ h1 {
 	color:#00ffff;
 	font-size:.80em;
 	line-height: 1.4em;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 h2 {
@@ -92,16 +96,14 @@ h3 {
     text-align: left;
     color: #222222;
     font-size: 1em;
-    margin-top: 2px;
-    margin-bottom: 0;
+    margin: 2px 0 0 0;
 }
 
 p {
     text-align: left;
     color: #666;
     font-size: 1.5em;
-    margin-bottom: 0;
-    margin-top: 5px;
+    margin: 10px 0 0 0;
     font-family: 'helvetica';
     line-height: 1.6em;
     font-weight: lighter;
@@ -113,18 +115,17 @@ p {
 	height:auto;
 	z-index:1;
 	padding:0;
-	
+	margin-top:2 0px;
 }
 
 .main_logo {
 	background-image:url(../img/soffra_logo.png);
 	background-size: 115px;
-    margin-left: 5px;
 	width:130px;
 	height:50px;
 	position: relative;
     top: 2px;
-	margin-top: 7px;
+	margin: 7px 0 0 5px;
 	cursor:pointer;
 	background-repeat:no-repeat;
 	-webkit-transition: background-image 200ms linear;
@@ -149,13 +150,44 @@ p {
     width: 100%;
     height: 0;
 }
+
+.headline_icon {
+	background-image:url(../img/SOFFRA_logo_headlineIcon.png);
+    background-repeat:no-repeat;
+	background-size: 57px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    right: 10px;
+}
+.cta_headline_icon {
+    background-image: url(../img/SOFFRA_logo_headlineIcon.png);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    right: 10px;
+    margin-bottom: 30px;
+}
+p.section-subtitle {
+    font-size: 1.5em;
+    color: #0ff;
+    text-align: center;
+    font-family: montserratsemi_bold;
+}
+	
 .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10 {
 	
 	height:200px;
 	background-color:#FFFFFF;
-	margin-bottom:20px;
-	margin-right:auto;
-	margin-left:auto;
+	margin: 0 auto 20px;
 	box-sizing:border-box;
 }
 .row1 {
@@ -163,7 +195,7 @@ p {
     width: 100%;
     margin-bottom: 170px;
     background-color: #FFF;
-    padding: 0px;
+    padding: 0;
     position: fixed;
     z-index: 98;
 	top:42px;
@@ -173,26 +205,25 @@ p {
 .row2 {
     height: 64px;
     width: 100%;
-    padding: 0px;
-    margin-bottom: 10px;
-    margin-top: 0px;
+    padding: 0;
+    margin: 0 0 10px 0;
     z-index: 1;
-	border-radius: 0px;
+	border-radius: 0;
     background-color: rgba(0, 0, 0, 0);
 }
 .row2b {
-    position: fixed;
-    top: 57px;
+    position: relative;
+    top: 44px;
     background-color: #ccc;
-    z-index: 201;
+    z-index: 2;
     height: 42px;
     width: 100%;
     margin: 0;
-	border-bottom: 4px solid #bbb;
+    border-bottom: 4px solid #bbb;
 }
 .row2b_statePage {
     position: fixed;
-    top: 57px;
+    top: 80px;
     z-index: 201;
     height: 41px;
     width: 100%;
@@ -203,13 +234,10 @@ p {
 .row2_approach {
     height: 75px;
     width: auto;
-    padding: 0px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding: 0 15px;
+    margin: 10px 0;
     z-index: 1;
     border-bottom: 2px solid #BBB;
-    padding-right: 15px;
-	padding-left:15px;
     background-color: #FFF;
 }
 .weather-search {
@@ -318,16 +346,12 @@ div#weather p {
     text-transform: uppercase;
     font-size: .8em;
     background-color: #333;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 3px 5px 1px;
     float: left;
     z-index: 1;
     position: relative;
 	font-family: 'montserratsemi_bold';
 	color: #00FFFF;
-	padding-top: 2px;
-	padding-bottom: 1px;
-
 }
 .climb_approach_longest {
     width: 160px;
@@ -335,15 +359,12 @@ div#weather p {
     text-transform: uppercase;
     font-size: .8em;
     background-color: #333;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 3px 5px 2px;
     float: left;
     z-index: 1;
     position: relative;
 	font-family: 'montserratsemi_bold';
 	color: #00FFFF;
-	padding-top: 2px;
-	padding-bottom: 1px;
 }
 .climb_approach_longest2 {
     width: 190px;
@@ -351,15 +372,12 @@ div#weather p {
     text-transform: uppercase;
     font-size: .8em;
     background-color: #333;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 2px 5px;
     float: left;
     z-index: 10;
     position: relative;
 	font-family: 'montserratsemi_bold';
 	    color: #00FFFF;
-		    padding-top: 2px;
-			padding-bottom: 1px;
 }
 .arrow-left_approach {
     width: 0px;
@@ -367,9 +385,8 @@ div#weather p {
     border-top: 10px solid rgba(0, 0, 0, 0);
     border-bottom: 10px solid rgba(0, 0, 0, 0);
     border-right: 10px solid #FFF;
-    margin-left: -9px;
     float: left;
-    margin-top: -2px;
+    margin: -2px 0 0 -9px;
     z-index: 20;
     display: block;
     position: relative;
@@ -380,9 +397,8 @@ div#weather p {
     border-top: 23px solid rgba(0, 0, 0, 0);
     border-bottom: 23px solid rgba(0, 0, 0, 0);
     border-right: 20px solid #FFF;
-    margin-left: -15px;
     float: right;
-    margin-top: -8px;
+    margin: -8px 0 0 -15px;
     z-index: 1;
     display: none;
     position: relative;
@@ -438,9 +454,9 @@ div#weather p {
 
 .row10 {
 	width:100%;
+	height:100%;
 	background-color: transparent;
 	margin-bottom:0;
-	margin-top: 20px;
 	/*border-top: 1px solid #CCC;*/
 }
 
@@ -513,7 +529,7 @@ ol {
 	margin-top: 20px;
 }
 .row.advertisement-row-top {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 .advertisement-text {
     text-align: center;
@@ -711,8 +727,9 @@ ol {
     font-size: .6em;
     float: left;
     margin-right: 0px;
+	margin-bottom: 5px;
     color: #555;
-	width: 33%;
+	width: 33.3%;
     text-align: center;
     text-transform: uppercase;
     padding: 8px 6px 4px;
@@ -728,7 +745,7 @@ ol {
      transition: background-color 200ms linear;
 }
 .breadCrumb-select:hover, .breadCrumb-select-countryPage:hover {
-    background-color: #999999;
+    background-color: #BBBBBB;
 	color:#00FFFF;
   -webkit-transition: background-color 200ms linear;
      -moz-transition: background-color 	200ms linear;
@@ -845,7 +862,9 @@ ol {
 .breadcrumb_pointer_climb {
 	bottom: 1px;	
 }
-
+.breadCrumb-select.breadCrumb-state {
+    border-right: 0;
+}
 .share-Container {
     height: 65px;
     width: 55px;
@@ -1024,6 +1043,9 @@ i.icon-chevron-sign-left:hover {
 .state_icon_arkansas2,
 .state_icon_arkansas3,
 
+.state_icon_coloradoHC,
+.state_icon_colorado1,
+
 .state_icon_connecticut2,
 .state_icon_connecticut3,
 .state_icon_connecticut4,
@@ -1119,7 +1141,7 @@ i.icon-chevron-sign-left:hover {
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50px;
+    background-size: 55px;
     float: left;
     padding-left: 0;
     padding-right: 0;
@@ -1158,6 +1180,15 @@ i.icon-chevron-sign-left:hover {
 .state_icon_arkansas3,
 .description_arkansas3 {
 	background-image:url(../img/state_icon_arkansas3.png);
+}
+
+.state_icon_coloradoHC,
+.description_coloradoHC {
+	background-image:url(../img/state_icon_coloradoHC.png);
+}
+.state_icon_colorado1,
+.description_colorado1 {
+	background-image:url(../img/state_icon_colorado1.png);
 }
 
 .state_icon_connecticut2,
@@ -1533,7 +1564,7 @@ i.icon-chevron-sign-left:hover {
 }
 .climb_title_approach {
 	height:60px;
-	width:82%;
+	width:81%;
 	float:right;
 	padding:0;
 	padding-top:0px;
@@ -1562,39 +1593,8 @@ i.icon-chevron-sign-left:hover {
     height: 22px;
     letter-spacing: .035em;
 }
-.climb_mainTitle_enosburg {
-	font-family: 'montserratsemi_bold';
-    text-align: left;
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 1.4em;
-    display: block;
-    height: 22px;
-    letter-spacing: .035em;
-}
-
-.climb_mainTitle_whiteface {
-	font-family: 'montserratsemi_bold';
-    text-align: left;
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 1.4em;
-    display: block;
-    height: 22px;
-    letter-spacing: .035em;
-}
- .climb_mainTitle_agamenticus {
-	font-family: 'montserratsemi_bold';
-    text-align: left;
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 1.4em;
-    display: block;
-    height: 22px;
-    letter-spacing: .035em;
-}
 .climb_mainTitle_mtwashington {
-    font-family: 'montserratsemi_bold';
+    font-family: 'montserratregular';
     text-align: left;
     text-transform: uppercase;
     color: #616161;
@@ -1841,10 +1841,10 @@ button#mountain-icon {
     width: 35px;
     float: right;
     position: relative;
-    bottom: 33px;
+    bottom: 35px;
     color: #222;
     padding-top: 2px;
-	left:12px;
+	left: 12px;
 	cursor:pointer;
 }
 .btn.more_options_search i.fa.fa-search {
@@ -1970,9 +1970,6 @@ i.fa.fa-chevron-left {
     padding-top: 15px;
     padding-bottom: 0;
 	min-height: 120px;
-	border-bottom: 3px solid #ccc;
-	border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
 	border-radius: 4px;
 }
 .col-sm-15.col-xs-6.avGrade-clearfix {
@@ -2176,7 +2173,7 @@ div#elevation_chart_container {
     bottom: 10px;
 }
 div#elevationFt {
-    border: 6px solid #0ff;
+    border: 4px solid #0ff;
     padding: 2px 5px 0px;
     background-color: #555;
     color: #eee;
@@ -2322,8 +2319,8 @@ div#elevationFt {
 	color:#999999;
 	margin-left:4px;
 }
-.icon-question-sign {
-	    height: 15px;
+.fa-question-circle {
+	height: 15px;
     width: 15px;
     font-family: 'FontAwesome';
     font-size: 11px;
@@ -2332,6 +2329,7 @@ div#elevationFt {
     position: relative;
     top: 0px;
     margin-left: 5px;
+    font-style: normal;
     -webkit-transition: color 200ms linear;
     -moz-transition: color 200ms linear;
     -o-transition: color 200ms linear;
@@ -2339,7 +2337,7 @@ div#elevationFt {
     transition: color 200ms linear;
 }
 
-.icon-question-sign:hover {
+.fa-question-circle:hover {
 	color:#999999;
 	-webkit-transition: color 200ms linear;
      -moz-transition: color 	200ms linear;
@@ -2419,17 +2417,14 @@ a.list-group-item {
 .styled-v-bar{ /* sample CSS class for a different vertical scrollbar look */
 	background:url(../img/custom-scroll-bar.png) center top no-repeat;
 	width: 10px;
-	margin-right: 0;
-	margin-bottom: 4px;
+	margin: 0 0 4px 0;
 }
 
 .area_climb_textbox {
     float: none;
     width: 84%;
     color: #222;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin: 5px 5px 0 0;
 }
 
 .area_climb_imgbox {
@@ -2445,10 +2440,10 @@ a.list-group-item {
     border-radius: 99px;
 }
 div#sidebar {
-    height: 500px;
+    height: 519px;
     overflow: scroll;
-    top: 46px;
-	resize:none;
+    top: 56px;
+    resize: none;
 	overflow-x: -moz-hidden-unscrollable;
 }
 .sidebar_inner {
@@ -2469,7 +2464,7 @@ div#sidebar_inner {
 }
 .sidebar_heading2 {
 	background-color:#222222;
-	height:50px;
+	height:55px;
 	border-radius:0;
 	margin-bottom: 0px;
     border-top: 11px solid #CCC;
@@ -2492,8 +2487,8 @@ div#sidebar_inner {
 .sidebar_textbox {
     width: 79%;
     color: #222;
-    margin-left: 20px;
-    margin-top: -3px;
+    margin-left: 5px;
+    margin-top: -6px;
     font-size: 1.05em;
 }
 .sidebar_altColor {
@@ -2510,14 +2505,46 @@ div#sidebar_inner {
 	display:none;
 }
 .sidebar_mountain_icon {
-    width: 30px;
-    height: 30px;
-    display: block;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
     position: absolute;
     float: left;
+    left: 9px;
     background-image: url(../img/sidebar_mountain_icon.svg);
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 14px;
+}
+.sidebar_subtext span {
+    font-weight: bold;
+    font-size: 1.3em;
+	font-family: 'montserratsemi_bold';
+    color: #0ff;
+    background-color: #222;
+    padding: 0 4px;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+.sidebar_subtext {
+    font-size: .59em;
+    text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: -.05em;
+    color: #666;
+    margin-top: 5px;
+	width:110%;
+}
+.sidebar_subtext:before {
+    font-family: FontAwesome;
+    content: "\f206";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-size: 1.6em;
+    color: #999999;
+    margin-right: 1px;
+    position: relative;
+    bottom: 1px;
 }
 .weatherBar_search {
   height: 73px;
@@ -2541,13 +2568,13 @@ div#sidebar_inner {
     color: #999;
 }
 .area_climb_textbox h2 {
-    font-size: .95em;
-    font-family: 'montserratsemi_bold';
+    font-size: 1em;
+    font-family: 'montserratregular';
 	color: #616161;
 }
 .area_climb_textbox h3 {
     font-size: .8em;
-    font-family: 'montserratsemi_bold';
+    font-family: 'montserratregular';
 	color: #222222;
 }
 .area_climb_textbox p {
@@ -2652,10 +2679,19 @@ i.fa.fa-area-chart.fa-area-chart2 {
   -webkit-transition: color 200ms linear;
   float: left;
 }
-
-.area-chart_container i.fa.fa-globe {
-    font-size: 1.65em;
+.area-chart_container i.fa.fa-flag {
+    font-size: 1em;
     color: #0B88FB;
+    left: 8px;
+    top: 1px;
+    position: relative;
+    transform: rotate(-10deg);
+}
+.area-chart_container i.fa.fa-globe {
+    font-size: 1.25em;
+    color: #0B88FB;
+    left: 6px;
+    position: relative;
 }
 .input_container {
     position: relative;
@@ -2679,7 +2715,7 @@ input#clearField {
     position: absolute;
     right: 0px;
     margin-right: 5px;
-    bottom: -4px;
+    bottom: -9px;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     outline: none;
@@ -2896,10 +2932,7 @@ a:-webkit-any-link {
   	background: #fff;
   	margin: 0;
   	padding: 0;
-  
-
 }
-
 svg[Attributes Style] {
   	width: 100%;
   	height: 160px;
@@ -2917,7 +2950,6 @@ user agent stylesheet* {
 .row.main_banner {
   	height: 480px;
   	width: 100%;
-  	background-image: url(../img/main_banner.jpg);
   	margin-left: auto;
   	margin-right: auto;
   	bottom: 70px;
@@ -2925,22 +2957,16 @@ user agent stylesheet* {
   	background-size: cover;
 
 }
-
 .container.main_container_index {
   overflow: visible;
   padding: 0;
   
 }
-
 .container.main_container_index {
   padding-left: 30px;
   padding-right: 30px;
   background-color: transparent;
   padding-top: 0px;
-
-}
-.main_banner_inner {
-    margin-top: 50px;
 }
 .tagline_search {
   color: #FFF;
@@ -2948,25 +2974,22 @@ user agent stylesheet* {
   font-size: 1.85em;
   text-align: center;
   text-transform: uppercase;
-  Padding-top: 40px;
+  padding-top: 40px;
   letter-spacing: .03em;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
-
-
 .result {
     margin: 10px 0;
-	background-color: rgba(0,0,0,.05);
+	background-color: rgba(255,255,255,1);
 	font-family: 'montserratregular';
     padding: 10px;
     border-radius: 3px;
     margin: 25px 0;
-	clear: both;
-	cursor: pointer;
-	text-decoration:none;
-	border-left: 1px solid #dedede;
-    border-right: 1px solid #dedede;
-    border-bottom: 3px solid #e0e0e0;
+    clear: both;
+    cursor: pointer;
+    text-decoration: none;
+    border: 3px solid #e0e0e0;
    -webkit-transition: background-color 100ms linear;
      -moz-transition: background-color 	100ms linear;
      -o-transition: background-color 100ms linear;
@@ -2974,8 +2997,9 @@ user agent stylesheet* {
      transition: background-color 100ms linear;
 }
 .result:hover {
-    background-color:rgba(0,0,0,.9);
-	font-family: 'montserratregular';
+    background-color: #ccc;
+    border: 3px solid #cccccc;
+    font-family: 'montserratregular';
     -webkit-transition: background-color 100ms linear;
      -moz-transition: background-color 	100ms linear;
      -o-transition: background-color 100ms linear;
@@ -2998,39 +3022,30 @@ user agent stylesheet* {
   	text-transform: uppercase;
   	color:#555;
 }
-
 .main_icon1, .main_icon2, .main_icon3 {
 	margin-bottom:50px;
-}
-
-.row.featurette.main_icon3 {
-  	margin-bottom: 100px;
+    padding: 20px;
 }
 img.featurette-image.img-responsive {
   	margin-left: auto;
   	margin-right: auto;
   	margin-bottom:20px;
 }
-
 .icon1_mobile {
 	display:block;
 }
 .icon1_desktop {
 	display:none;
 }
-
 .icon3_mobile {
 	display:block;
 }
 .icon3_desktop {
 	display:none;
 }
-
-
 i.icon-search.icon_search_main {
   margin-right: 10px;
 }
-
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #999;
 }
@@ -3240,9 +3255,11 @@ input[type="text"] {
 	padding-top: 4px;
 	padding-right: 30px;
     border: 0;
+	color: #666;
     background: rgba(255, 255, 255, 1);
 	font-family: 'montserratlight';
 }
+
 input[type="submit"] {
     width: 200px;
     display: block;
@@ -3314,7 +3331,7 @@ span.climbatlaslogo_mainbutton {
     color: #FFF;
     text-align: center;
     font-size: 1.2em;
-    margin-top: 20px;
+    margin-top: -20px;
 	text-transform:uppercase;
 	font-family: 'montserratregular';
 }
@@ -3333,7 +3350,7 @@ input.sidebar_submit {
     left: 3px;
     z-index: 999;
     border-radius: 0px 0px 0px 0px;
-	padding-top: 8px;
+	padding-top: 5px;
     padding-bottom: 6px;
     margin-right: 15px;
     text-align: center !important;
@@ -3345,9 +3362,12 @@ input:focus {
 }
 .sidebar_textbox h1 {
     font-size: 0.8em;
-    color: #616161;
-	margin-top: 23px;
-    font-family: 'montserratsemi_bold';
+    color: #222;
+    margin-top: 12px;
+    font-family: 'montserratregular';
+    border-bottom: 3px solid #ccc;
+    width: 120%;
+    padding-bottom: 5px;
 }
 .sidebarSearch_textbox h1 {
     color: #616161;
@@ -3516,30 +3536,32 @@ i.fa.fa-heartbeat-state {
     position: relative;
     bottom: 17px;
 }
-i.icon-question-sign.sidebar_tooltip1 {
-    margin-top: 25px;
+i.fa-question-circle.sidebar_tooltip1 {
+    margin-top: 16px;
     position: absolute;
 }
 .state_icon_sidebar {
     background-repeat: no-repeat;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     float: right;
     position: relative;
-    left: 3px;
-    bottom: 25px;
+    bottom: 49px;
 }
 .state_icon_sidebar2 {
     background-repeat: no-repeat;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     float: right;
     position: relative;
     left: 3px;
-    bottom: 42px;
+    bottom: 41px;
+    background-size: 40px;
 }
 
-
+.unitedstates_sidebar.state_icon_sidebar {
+    bottom: 28px;
+}
 .alabama_sidebar {
     background-image: url(../img/alabama_sidebar.png);   
 }
@@ -3895,7 +3917,7 @@ h3.about_heading_mobile {
     padding: 0;
     margin-top: 20px;
     font-family: "norwesterregular";
-    width: 107%;
+    width: 100%;
     margin-left: 0px;
     font-size: 1em;
     z-index: 4;
@@ -3947,7 +3969,6 @@ h3.about_heading_mobile {
     float: left;
 	margin-right: 5px;
 }
-
 .usa_flag-statePage {
     background-image: url(../img/american-flag.svg);
     background-size: cover;
@@ -3963,23 +3984,34 @@ h3.about_heading_mobile {
 }
 
 .world_flag {
-    background-image: url(../img/earth.svg);
-    background-size: 35px;
+    background-image:url(../img/world_atlas_icon.png);
+    background-size: 70px;
     background-repeat: no-repeat;
-    height: 40px;
-    width: 37px;
+    height: 65px;
+    width: 70px;
+    float: left;
+    position: relative;
+    bottom: 15px;
+}
+.usa_atlas_icon {
+    background-image:url(../img/unitedstates_atlas_icon.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 70px;
     float: left;
     margin-right: 10px;
     position: relative;
-    bottom: 3px;
+    bottom: 15px;
 }
+
 .state_flags {
     background-size: 45px;
     background-repeat: no-repeat;
     height: 32px;
     width: 47px;
     float: left;
-    margin-right: 10px;
+    margin: 8px 10px 0 0;
 	background-size:cover;
 	border:1px solid #CCCCCC;
 }
@@ -4901,10 +4933,22 @@ h3.about_heading_mobile {
     background-image: url(../img/Flag_of_Zimbabwe.svg);
 }
 
-
+.back-to-world-button {
+    float: right;
+    position: relative;
+    font-size: .4em;
+    bottom: 7px;
+}
+.back-to-world-button .fa.fa-chevron-left {
+    color: #fff;
+    font-size: 1.5em;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
 .container.climbatlas_us {
     border-radius: 5px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 .title_inner_mountain_usa {
     display: block;
@@ -5035,16 +5079,17 @@ h3.about_heading_mobile {
 }
 
 .atlas_heading {
-    text-align: left;
+	text-align: left;
     font-family: 'montserratlight';
     font-size: 1.5em;
-    margin-top: 20px;
-    border-bottom: 1px solid #ebebeb;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
     padding-left: 0px;
-    color: #AAAAAA;
-    padding-bottom: 5px;
-    background-image: url(../img/climbAtlas-logo.png);
-    height: 30px;
+    color: #aaa;
+    padding-bottom: 0px;
+    background-image: url(../img/climbAtlas-logo.svg);
+    height: 35px;
     background-size: 140px;
     background-repeat: no-repeat;
 }
@@ -5151,8 +5196,6 @@ i.fa.fa-angle-left {
     bottom: 12px;
 	z-index: 3;
     top: -9px;
-    margin-right: 15px;
-
 }
 .legend_item_1,  .legend_item_2,  .legend_item_3 {
     margin-top: 10px;
@@ -5205,6 +5248,9 @@ h1.page-header.statepage_headline {
 }
 .arkansas_state {
     background-image:url(../img/state_icons_stateAR.png);
+}
+.colorado_state {
+    background-image:url(../img/state_icons_stateCO.png);
 }
 .connecticut_state {
     background-image:url(../img/state_icons_stateCT.png);
@@ -5393,6 +5439,9 @@ i.fa-area-chart4 {
 .state_icon_arkansas2,
 .state_icon_arkansas3,
 
+.state_icon_coloradoHC,
+.state_icon_colorado1,
+
 .state_icon_connecticut2,
 .state_icon_connecticut3,
 .state_icon_connecticut4,
@@ -5543,6 +5592,38 @@ input[type="text"] {
 .breadcrumb_list {
     font-size: .75em;
 }
+.breadCrumb-select, .breadCrumb-select-countryPage {
+	margin-bottom: 5px;
+    height: 29px;
+}
+.breadCrumb-select, .breadCrumb-select-countryPage {
+    font-size: .75em;
+    padding: 11px 10px 4px;
+}
+.breadCrumb-select {
+    padding: 9px 10px 4px;
+}
+.breadCrumb-select-countryPage {
+    font-size: .80em;
+    padding: 11px 10px 4px;
+}
+.breadCrumb-container, 
+.breadCrumb-container-usa,
+.state_container .breadCrumb-container,
+.climbatlas_us .breadCrumb-container {
+    height: 30px;
+}
+.breadCrumb-select-climbAtlas {
+    padding: 11px 15px 5px;
+	font-size: .80em;
+	height: 29px;
+
+}
+.breadCrumb-select-statePage {
+    padding: 12px 0;
+    height: 29px;
+	font-size: .75em;
+}
 .ad1, .ad2 {
   margin-right: 11px;
 }
@@ -5553,8 +5634,8 @@ input[type="text"] {
   font-size: 1.6em;
 }
 .atlas_heading {
+    background-size: 180px;
     height: 40px;
-    background-size: 200px;
 }
 .shareMain-Container {
     margin-right: 14px;
@@ -5568,6 +5649,9 @@ input[type="text"] {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -5659,8 +5743,8 @@ input[type="text"] {
 .state_icon_westvirginia2,
 .state_icon_westvirginia3,
 .state_icon_westvirginia4 {
-    width: 17.1%;
-    background-size: 60px;
+    width: 17.2%;
+    background-size: 62px;
 }
 .title_cat {
     height: 25px;
@@ -5679,18 +5763,12 @@ input[type="text"] {
 #earth_box {
 	height: 193px;
 }
-.area_climb_textbox h2 {
-    font-size: 1.1em;
-}
 .area_climb_textbox p {
     font-size: .85em;
     margin-top: 1px;
 }
 .area_climb_imgbox {
 	margin-top: -43px;
-}
-.state_icon_sidebar {
-    bottom: 29px;
 }
 .atlas_legend_container {
 	width: 40%;
@@ -5716,16 +5794,15 @@ input[type="text"] {
 .footernav_section {
     width: 85px;
 }
-.breadCrumb-select, .breadCrumb-select-countryPage {
-    font-size: .75em;
-    padding: 7px 10px 4px;
-}
 input#clearField2 {
     right: 10px;
 }
 .fietsLogo_logo {
     float: left;
 	margin-top:3px;
+}
+.back-to-world-button {
+    bottom: 0;
 }
 }
 @media (min-width: 414px) {
@@ -5761,6 +5838,9 @@ input#clearField2 {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -5945,6 +6025,9 @@ input.main_search_input {
 .state_icon_arkansas2,
 .state_icon_arkansas3,
 
+.state_icon_coloradoHC,
+.state_icon_colorado1,
+
 .state_icon_connecticut2,
 .state_icon_connecticut3,
 .state_icon_connecticut4,
@@ -6035,13 +6118,13 @@ input.main_search_input {
 .state_icon_westvirginia2,
 .state_icon_westvirginia3,
 .state_icon_westvirginia4 {
-    width: 14%;
+    width: 16%;
+    background-size: 64px;
 }
 .climbatlas_caption_row {
     margin-bottom: 250px;
 }
 .atlas_heading {
-    font-size: 3.5em;
     padding-bottom: 10px;
 }
 .atlas_icon_container {
@@ -6076,7 +6159,7 @@ input#clearField2 {
     width: 90%;
 }
 .atlas_legend_container {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 }
 @media (min-width: 481px) {
@@ -6135,6 +6218,9 @@ input.main_search_input {
 .state_icon_arkansas2,
 .state_icon_arkansas3,
 
+.state_icon_coloradoHC,
+.state_icon_colorado1,
+
 .state_icon_connecticut2,
 .state_icon_connecticut3,
 .state_icon_connecticut4,
@@ -6225,8 +6311,8 @@ input.main_search_input {
 .state_icon_westvirginia2,
 .state_icon_westvirginia3,
 .state_icon_westvirginia4 {
-    width: 13%;
-    background-size: 60px;
+    width: 13.4%;
+    background-size: 65px;
 }
 #earth_box {
     height: 300px;
@@ -6241,7 +6327,9 @@ input.main_search_input {
 input#clearField2 {
     right: 5px;
 }
-
+.atlas_legend_container {
+    margin-right: 35px;
+}
 }
 @media (min-width: 584px) {
 .mainStats {
@@ -6273,7 +6361,7 @@ i.fa.fa-star-state {
 }
 
 .breadCrumb-select.breadCrumb-atlas {
-    border-left: 17px solid #999;
+    border-left: 17px solid #bbb;
 }
 .main_container .col-lg-12.breadCrumb-container {
     border-right: 17px solid #bbb;
@@ -6375,6 +6463,7 @@ i.fa.fa-share-alt {
     margin-top: 10px;
     color: #777;
     font-weight: 400;
+    opacity: 1 !important;
 }
 .el_500_fix, .el_1000_fix, .el_1500_fix, .el_2000_fix, .el_2500_fix, .el_5000_fix {
     top: 2px;
@@ -6403,10 +6492,11 @@ i.fa.fa-share-alt {
 .el_2500 .elscale_hilite,
 .el_5000 .elscale_hilite {
     margin-top: -5px;
-    font-family: montserratregular;
+    font-family: norwesterregular;
     font-weight: bold;
     padding-bottom: 0px;
     padding-top: 2px;
+    letter-spacing: .075em
 }
 
 .row500.elscale_hilite {
@@ -6684,11 +6774,11 @@ i.fa.fa-share-alt {
 }
 .climb_title_approach {
     width: 78%;
-    margin-top: 0px;
+    margin-top: -3px;
 }
 .climb_mainTitle {
-    height: 35px;
-    font-size: 2.5em;
+    height: 37px;
+    font-size: 2.55em;
 }
 .climb_mainTitle_enosburg {
     font-size: 1.55em;
@@ -6776,6 +6866,9 @@ input.main_search_input {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -6896,13 +6989,13 @@ input.sidebar_submit.btn.btn-default {
     font-size: 1.3em;
 }
 .sidebar_textbox h1 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .area_climb_imgbox {
     margin-top: -42px;
 }
-i.icon-question-sign.sidebar_tooltip1 {
-    margin-top: 23px;
+i.fa-question-circle.sidebar_tooltip1 {
+    margin-top: 10px;
 }
 input[type="text"] {
     font-size: 1.4em;
@@ -6956,6 +7049,22 @@ h3.about_heading_mobile {
 .breadCrumb-container-usa, 
 .state_container .breadCrumb-container {
 	height: 30px;
+}
+.state_icon_sidebar {
+    bottom: 53px;
+}
+.sidebar_subtext {
+    margin-top: 5px;
+}
+/*i.fa.fa-heartbeat {
+    bottom: 8px;
+}*/
+.atlas_legend_container {
+    margin-right: 20px;
+}
+.back-to-world-button {
+    font-size: .5em;
+	top: 0;
 }
 }
 
@@ -7052,22 +7161,24 @@ input#clearField2 {
 }
 
 .nav>li:hover {
-	border-bottom:2px solid #00FFFF;
-	-webkit-transition: border-color 250ms linear;
-     -moz-transition: border-color 	250ms linear;
-     -o-transition: border-color 250ms linear;
-     -ms-transition: border-color 250ms linear;
-     transition: border-color 250ms linear;
+	background-color: #2f2f2f;
+	-webkit-transition: background-color 250ms linear;
+     -moz-transition: background-color 	250ms linear;
+     -o-transition: background-color 250ms linear;
+     -ms-transition: background-color 250ms linear;
+     transition: background-color 250ms linear;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: -10px;
 }
 .navbar-nav {
     margin-right: 15px;
-    margin-top: 5px;
 }
 p {
     font-size: 1.25em;
+}
+.row2b {
+    top: 41px;
 }
 input[type="text"] {
     font-size: 1.9em;
@@ -7182,10 +7293,6 @@ div#weather p {
 .more_options3 {
 	display:block;	
 }
-
-.main_banner_inner {
-    margin-top: 70px;
-}
 .icon-angle-left {
     top: 2px;
 }
@@ -7262,6 +7369,9 @@ div#sidebar {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -7353,7 +7463,8 @@ div#sidebar {
 .state_icon_westvirginia2,
 .state_icon_westvirginia3,
 .state_icon_westvirginia4 {  
-width: 18%;
+	width: 17%;
+    background-size: 122px;
 }
 .mainStats {
     width: 53.7%;
@@ -7382,8 +7493,8 @@ width: 18%;
    width: 77%;
 }
 .climb_mainTitle {
-	font-size: 2.6em;
-    height: 42px;
+	font-size: 2.75em;
+    height: 48px;
 	margin-top: -2px;	
 }
 .climb_mainTitle_bromley {
@@ -7553,6 +7664,13 @@ input[type="text"] {
     max-width: 1000px;
     margin-bottom: 60px;
 }
+input[type="text"] {
+    height: 60px;
+}
+input#clearField {
+
+    bottom: -4px;
+}
 .loader {
     margin: -270px auto;
 }
@@ -7582,9 +7700,6 @@ h1.page-header.statepage_headline {
 .country-headline-statePage {
     display: block;
 }
-.shareMain-Container {
-    margin-right: 2px;
-}
 .more_options2 i.fa.fa-times, .more_options3 i.fa.fa-times {
     top: 8px;
 }
@@ -7594,6 +7709,10 @@ h3.about_heading_mobile {
 
 .climbatlas_us .breadCrumb-container {
     height: 30px;
+}
+.back-to-world-button {
+    font-size: .65em;
+	top: 0;
 }
 }
 @media (min-width: 817px) {
@@ -7775,10 +7894,6 @@ input[type="text"] {
 .sidebar-offcanvas {
   width: 85%;
 }
-.main_icon1, .main_icon2, .main_icon3 {
-margin-bottom: 130px;
-}
-
 .icon1_mobile {
 	display:none;
 }
@@ -7792,7 +7907,6 @@ margin-bottom: 130px;
 .icon3_desktop {
 	display:block;
 }
-
 input.main_search_input {
   width: 60%;
 }
@@ -7814,7 +7928,6 @@ input.main_search_input {
     height: 41px;
 	margin-top: 0px;
 }
-
 .state_icon_alabama2,
 .state_icon_alabama3,
 
@@ -7824,6 +7937,9 @@ input.main_search_input {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -7978,6 +8094,17 @@ div#elevation_chart_container {
 }
 h3.about_heading_mobile {
     width: 101%;
+}
+.climb_mainTitle {
+    height: 55px;
+    font-size: 3.3em;
+}
+#numbers .section-background-image img {
+    top: 160px;
+}
+	
+#testimonial-slider .section-background-image img {
+    top: 50px;
 }
 }
 
@@ -8193,11 +8320,10 @@ body {
 }
 .climb_title_approach {
    width: 84.5%;
-   margin-top: 6px;
+   margin-top: 4px;
 }
 .climb_mainTitle {
   width: 100%;
-  font-size: 3em;
 }
 .climb_mainTitle_enosburg {
   width: 100%;
@@ -8206,6 +8332,7 @@ body {
 }
 .climb_mainTitle {
 	margin-top: -5px;
+    height: 52px;
 }
 .climb_mainTitle_whiteface {
     height: 44px;
@@ -8256,6 +8383,9 @@ input.main_search_input {
 .state_icon_arkansas1,
 .state_icon_arkansas2,
 .state_icon_arkansas3,
+
+.state_icon_coloradoHC,
+.state_icon_colorado1,
 
 .state_icon_connecticut2,
 .state_icon_connecticut3,
@@ -8347,9 +8477,9 @@ input.main_search_input {
 .state_icon_westvirginia2,
 .state_icon_westvirginia3,
 .state_icon_westvirginia4 {
-	width:14%;
+	width:15%;
 	left: 12px;
-	background-size: 142px;
+	background-size: 144px;
     bottom: 45px;
 }
 
@@ -8600,7 +8730,13 @@ h3.about_heading_mobile {
 .breadCrumb-select-climbAtlas, .breadCrumb-select-countryPage {
     width: 250px;
 }
-
+.atlas_heading {
+    background-size: 270px;
+    height: 55px;
+}
+.back-to-world-button {
+    top: 5px;
+}
 }
 @media (min-width: 1280px) {
 
@@ -8628,13 +8764,13 @@ h3.about_heading_mobile {
 }
 
 div#sidebar {
-    height: 551px;
+    height: 557px;
     width: 329px;
     overflow: scroll;
     resize: none;
     right: 427px;
     z-index: 1;
-    top: 260px;
+    top: 299px;
 }
 
 .mapStats {
@@ -8647,11 +8783,12 @@ div#sidebar {
 }
 
 .sidebar_heading2 {
-    height: 75px;
+    height: 80px;
 	border-top: 0;
 }
 .sidebar_textbox h1 {
-    font-size: .85em;
+    font-size: .8em;
+    margin-top: 0;
 }
 .area-chart_container {
     width: 25px;
@@ -8659,6 +8796,12 @@ div#sidebar {
 .sidebar_mountain_icon {
     width: 20px;
     background-size: 15px;
+    left: 4px;
+}
+.area-chart_container i.fa.fa-flag {
+    font-size: 1.1em;
+    position: relative;
+    left: 3px;
 }
 
 .area-chart_container i.fa.fa-globe {
@@ -8671,8 +8814,8 @@ div#sidebar {
     padding-top: 20px;
 }
 
-i.icon-question-sign.sidebar_tooltip1 {
-    margin-top: 39px;
+i.fa-question-circle.sidebar_tooltip1 {
+    margin-top: 18px;
 }
 
 .shareMain-Container {
@@ -8683,10 +8826,10 @@ i.icon-question-sign.sidebar_tooltip1 {
 	border-right: 1px solid #bbb;
 }
 .unitedstates_sidebar.state_icon_sidebar {
-    bottom: 40px;
+    bottom: 64px;
 }
 .shareMain-Container {
-    width: 196px;
+    width: 195px;
     right: 1px;
     padding-left: 15px;
 }
@@ -8697,6 +8840,21 @@ i.icon-question-sign.sidebar_tooltip1 {
 .state_container .breadCrumb-container {
     border-right: 1px solid #bbb;
     width: 101.9%;
+}
+.state_icon_alabama2, .state_icon_alabama3, .state_icon_arizonaHC, .state_icon_arizona1, .state_icon_arkansas1, .state_icon_arkansas2, .state_icon_arkansas3, .state_icon_coloradoHC, .state_icon_colorado1, .state_icon_connecticut2, .state_icon_connecticut3, .state_icon_connecticut4, .state_icon_georgiaHC, .state_icon_georgia1, .state_icon_georgia2, .state_icon_kentucky1, .state_icon_kentucky2, .state_icon_kentucky3, .state_icon_maine2, .state_icon_maine3, .state_icon_maine4, .state_icon_maryland1, .state_icon_maryland2, .state_icon_maryland3, .state_icon_maryland4, .state_icon_massachusetts1, .state_icon_massachusetts2, .state_icon_massachusetts3, .state_icon_massachusetts4, .state_icon_newhampshireHC, .state_icon_newhampshire1, .state_icon_newhampshire2, .state_icon_newhampshire3, .state_icon_newhampshire4, .state_icon_newjersey2, .state_icon_newjersey3, .state_icon_newjersey4, .state_icon_newmexicoHC, .state_icon_newmexico1, .state_icon_newyorkHC, .state_icon_newyork1, .state_icon_newyork2, .state_icon_newyork3, .state_icon_newyork4, .state_icon_nevadaHC, .state_icon_nevada1, .state_icon_northcarolinaHC, .state_icon_northcarolina1, .state_icon_northcarolina2, .state_icon_oklahoma2, .state_icon_oklahoma3, .state_icon_pennsylvania1, .state_icon_pennsylvania2, .state_icon_pennsylvania3, .state_icon_pennsylvania4, .state_icon_southcarolina1, .state_icon_southcarolina2, .state_icon_southcarolina3, .state_icon_southcarolina4, .state_icon_tennesseeHC, .state_icon_tennessee1, .state_icon_tennessee2, .state_icon_texasHC, .state_icon_texas1, .state_icon_texas2, .state_icon_texas3, .state_icon_virginiaHC, .state_icon_virginia1, .state_icon_virginia2, .state_icon_virginia3, .state_icon_virginia4, .state_icon_vermontHC, .state_icon_vermont1, .state_icon_vermont2, .state_icon_vermont3, .state_icon_vermont4, .state_icon_westvirginiaHC, .state_icon_westvirginia1, .state_icon_westvirginia2, .state_icon_westvirginia3, .state_icon_westvirginia4 {
+	background-size: 160px;
+    height: 145px;
+	bottom: 48px;
+}
+.climb_mainTitle {
+    height: 56px;
+    font-size: 3.45em;
+}
+.main_map {
+    margin-top: 0px;
+}
+.tagline_search {
+    font-size: 4.5em;
 }
 }
 

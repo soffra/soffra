@@ -5,7 +5,8 @@ import Climb from './climb/climb';
 const Routes = () => (
   <Router>
     <switch>
-      <Route exact path='/' component={Climb} />
+      <Route exact path='/' component={Landing} />
+
     </switch>
   </Router>
 );

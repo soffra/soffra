@@ -1,9 +1,20 @@
 import React from 'react';
 
-const Climb = () => {
-    return(
-        <h1>Hello</h1>
-    );
-};
+class Climb extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      climbs: []
+    };
+  }
+
+  render() {
+    console.log(this.props.match.params.climbName);
+    return (
+    <div></div>
+    )
+  }
+}
 
 export default Climb;

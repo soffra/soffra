@@ -1,12 +1,16 @@
 module.exports = function (app, ClimbDataModel) {
-  function findAllClimbsForState(state) {
-    console.log(state);
-    ClimbDataModel.findAllClimbsForState(state)
-      .then(function (climbs) {
-        console.log('CLIMBS: ', climbs);
-      }, function (error) {
-        console.log('ERROR:', error);
+
+  app.get('/climbList', findAllClimbsForState);
+
+  function findAllClimbsForState(req, res) {
+    ClimbDataModel.findAllClimbsForState('MASSACHUSETTS')
+      .then(climbs => {
+        if(climbs != []) {
+          res.json(climbs);
+        }
+      })
+      .catch(error => {
+        res.send(error);
       });
   }
-  findAllClimbsForState('MASSACHUSETTS');
 };

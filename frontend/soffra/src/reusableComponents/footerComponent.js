@@ -1,17 +1,17 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer class="row row10">
+  <footer className="row row10">
 
-    <div class="col-lg-12 text-center footer">
-      <div class="container">
-        <a href="index.html"><div class="footer_logo"></div></a>
-        <p class="signoff">© Copyright 2017 SOFFRA, Inc. | All rights reserved.</p>
+    <div className="col-lg-12 text-center footer">
+      <div className="container">
+        <a href="index.html"><div className="footer_logo"></div></a>
+        <p className="signoff">© Copyright 2017 SOFFRA, Inc. | All rights reserved.</p>
 
 
-        <div class="col-lg-12 text-center footernav_wrapper">
-          <div class="footernav_section col-md-4">
-            <h2 class="footernav_sectionheading">Explore</h2>
+        <div className="col-lg-12 text-center footernav_wrapper">
+          <div className="footernav_section col-md-4">
+            <h2 className="footernav_sectionheading">Explore</h2>
             <ul>
               <a href="https://soffra.org/about.php"><li>About SOFFRA</li></a>
               <a href="https://soffra.org/earth.php"><li>Climb Atlas</li></a>
@@ -21,8 +21,8 @@ const Footer = () => (
             </ul>
           </div>
 
-          <div class="footernav_section col-md-4">
-            <h2 class="footernav_sectionheading">Follow</h2>
+          <div className="footernav_section col-md-4">
+            <h2 className="footernav_sectionheading">Follow</h2>
             <ul>
               <a href="#"><li>Strava</li></a>
               <a href="#"><li>Twitter</li></a>
@@ -31,8 +31,8 @@ const Footer = () => (
             </ul>
           </div>
 
-          <div class="footernav_section col-md-4">
-            <h2 class="footernav_sectionheading">More</h2>
+          <div className="footernav_section col-md-4">
+            <h2 className="footernav_sectionheading">More</h2>
             <ul>
               <a href="https://soffra.org/ads.php"><li>Advertise</li></a>
               <a href="https://soffra.org/local.php"><li>Local</li></a>

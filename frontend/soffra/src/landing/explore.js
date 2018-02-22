@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ClimbAtlas = () => {
+const Explore = () => {
   return (
     <section id="climbatlas" class="two-cols-description-section section-accent section">
       <div class="container-fluid two-cols-description-row">
@@ -29,4 +29,4 @@ const ClimbAtlas = () => {
   );
 };
 
-export default ClimbAtlas;
+export default Explore;

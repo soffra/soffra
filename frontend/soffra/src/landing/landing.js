@@ -7,7 +7,11 @@ import HowItWorks from './howItWorks';
 import Portfolio from './portfolio';
 import Numbers from './numbers';
 import Video from './video';
-import ClimbAtlas from './climbAtlas';
+import Explore from './explore';
+import TestimonialSlider from './testimonialSlider';
+import FAQ from './faq';
+import Closing from './closing';
+import Footer from '../reusableComponents/footerComponent';
 
 const Landing = () => {
   return (
@@ -20,7 +24,11 @@ const Landing = () => {
       <Portfolio />
       <Numbers />
       <Video />
-      <ClimbAtlas />
+      <Explore />
+      <TestimonialSlider />
+      <FAQ />
+      <Closing />
+      <Footer />
     </div>
   );
 };

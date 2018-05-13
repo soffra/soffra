@@ -1,0 +1,11 @@
+@charset "utf-8";
+.styled-v-bar ins{ /* Style for the "ins" inner element, or bottom of the scrollbar */ 
+	display: block;
+	background:url(../img/custom-scroll-bar.png) center bottom no-repeat;
+	width: 10px;
+	height: 4px;
+	position: absolute;
+	top: 100%;
+}
+/* CSS Document */
+

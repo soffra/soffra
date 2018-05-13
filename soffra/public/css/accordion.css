@@ -1,0 +1,402 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans|Marvel:400,700,400italic);
+html, body {
+	margin: 0;
+}
+
+.accordion-container{
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+	min-height: 100%;
+	
+}
+
+.accordion-panel i.background{
+	position:absolute;
+	font-size:60px;
+	width:99px;
+	height:99px;
+	line-height:99px;
+	text-align:center;
+	display:block;
+	top:20px;
+	left:10px;
+	z-index:-1;
+	color:rgba(0,0,0,0.15);
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	
+}
+
+.accordion-container label{
+	text-transform:uppercase;
+	font-family: colaborate-regularregular;	padding: 0px 10px 5px 55px;
+	position: relative;
+	border-radius:2px 2px 0px 0px;
+	z-index: 20;
+	display: block;
+	height:50px;
+	cursor: pointer;
+	line-height: 50px;
+	font-size: 14px;
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+.accordion-container label i {
+	overflow: hidden;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 7px;
+	top: 1px;
+	font-size: 14px;
+	line-height: 60px;
+	text-align: center;
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	
+}
+
+.accordion-container label:hover i {
+	color:#EF5E03;
+	font-size:14px;
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	
+}
+
+
+.accordion-container label:hover{
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.accordion-container input:checked + label,
+.accordion-container input:checked + label:hover{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	color:#DBBA03;
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	padding: 0px 10px;
+	
+}
+
+.accordion-container input:checked + label i,
+.accordion-container input:checked + label:hover i{
+	display:block;
+	
+}
+
+
+.accordion-container label:hover:after,
+.accordion-container input:checked + label:hover:after{
+ 	font-family: 'FontAwesome';
+  	font-weight: normal;
+  	font-style: normal;
+  	text-decoration: inherit;
+  	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 4px;
+	content:url(../img/button_arrow.png);
+	
+}
+.accordion-container input:checked + label:hover:after{
+ 	font-family: 'FontAwesome';
+  	font-weight: normal;
+  	font-style: normal;
+  	text-decoration: inherit;
+  	-webkit-font-smoothing: antialiased;
+	content:url(../img/button_arrow2.png); 
+	-ms-transition: rotate(-90deg); /* IE 9 */
+    -webkit-transition: rotate(-90deg); /* Safari */
+	-moz-transition: rotate(-90deg);
+	-o-transition: rotate(-90deg);
+    transition: rotate(-90deg);
+}
+.accordion-container input{
+	display: none;
+}
+.accordion-container article{
+	font-family: 'colaborate-thinregular';	
+	padding: 0px 20px 5px 15px;
+	margin-top: -5px;
+	overflow: hidden;
+	height: 0px;
+	border-radius:0px 0px 4px 4px;
+	position: relative;
+	z-index: 10;
+	text-align:justify;
+	-webkit-transition: height 0.3s ease-in-out;
+	-moz-transition: height 0.3s ease-in-out;
+	-o-transition: height 0.3s ease-in-out;
+	-ms-transition: height 0.3s ease-in-out;
+	transition: height 0.3s ease-in-out;
+
+}
+.accordion-container article p, .accordion-container article h1, .accordion-container article h2, .accordion-container article h3, .accordion-container article h4, .accordion-container article h5, .accordion-container article button{
+	line-height: 20px;
+	font-size: 12px;
+	margin: 15px 5px 20px 5px;
+}
+
+.accordion-container article button{
+	border:0;
+	background-color:#cccccc;
+	cursor:pointer;
+	padding:14px;
+	display:inline-block;
+}
+
+.accordion-container article button:hover{
+	background-color:white;
+	color:#000;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+.accordion-container input:checked ~ article i.background{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	animation-delay:.5s;
+	-webkit-animation-delay:.5s;
+}
+
+.accordion-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out;
+	-moz-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
+	-ms-transition: height 0.5s ease-in-out;
+	transition: height 0.5s ease-in-out;
+}
+.accordion-container input:checked ~ article.accordion-panel{
+	height: auto;
+	padding-bottom:30px;
+}
+
+.accordion-container input:checked ~ article.accordion-panel_big{
+	height: 350px;
+	padding-bottom:50px;
+	margin-bottom:20px;
+}
+.accordion-container article:before{
+	 content: "";
+	 position: fixed;
+	 top: -10px;
+	 left: 0;
+	 width: 100%;
+	 height: 10px;
+	 z-index: 100;
+	 
+}
+
+/*Color Variations*/
+.accordion-container.grey label {
+	background:rgb(34,34,34);
+	border-bottom-color: rgb(152,163,163);
+	color:#00FFFF;
+}
+.accordion-container.grey label:hover {
+	background: #444444;
+	color:#FFFFFF;
+}
+.accordion-container.grey input:checked + label
+{
+	color: #00FFFF;
+	background:rgb(34,34,34); 
+}
+.accordion-container.grey input:checked + label:hover {
+		background:#444444;
+	color:#00FFFF;
+}
+.accordion-container.grey article {
+	background:#FFFFFF;
+	
+}
+.accordion-container.grey article p {
+	color:#313030;
+}
+.accordion-container.blue label {
+	background:rgb(52,152,219);
+	border-bottom-color: rgb(41,128,185);
+
+}
+.accordion-container.blue label:hover {
+	background:rgb(41,128,185);
+	color:#FFF;
+}
+.accordion-container.blue input:checked + label,
+.accordion-container.blue input:checked + label:hover{
+	color: #FFFFFF;
+	background:rgb(41,128,185);
+}
+.accordion-container.blue article {
+	background: rgb(236,240,241);
+	
+}
+.accordion-container.blue article p {
+	color:#333;
+}
+
+.accordion-container.blue article button:hover{
+	background:rgb(41,128,185);
+	color:#FFF;
+}
+
+
+.accordion-container.orange label {
+	background:rgb(243,156,18);
+	border-bottom-color: rgb(241,196,15);
+
+}
+.accordion-container.orange label:hover {
+	background:rgb(241,196,15);
+	color:#FFF;
+}
+.accordion-container.orange input:checked + label,
+.accordion-container.orange input:checked + label:hover{
+	color: #FFFFFF;
+	background:rgb(241,196,15);
+}
+.accordion-container.orange article {
+	background: rgb(236,240,241);
+
+}
+.accordion-container.orange article p {
+	color:#333;
+}
+.accordion-container.orange article button:hover{
+	background:rgb(241,196,15);
+	color:#FFF;
+}
+
+.accordion-container.green label {
+	background:rgb(26,188,156);
+	border-bottom-color: rgb(22,160,133);
+
+}
+.accordion-container.green label:hover {
+	background:rgb(22,160,133);
+	color:#FFF;
+}
+.accordion-container.green input:checked + label,
+.accordion-container.green input:checked + label:hover{
+	color: #FFFFFF;
+	background:rgb(22,160,133);
+}
+.accordion-container.green article {
+	background: rgb(236,240,241);
+
+}
+.accordion-container.green article p {
+	color:#333;
+}
+.accordion-container.green article button:hover{
+	background:rgb(22,160,133);
+	color:#FFF;
+}
+
+
+.accordion-container.dark label {
+	background:rgb(5,5,5);
+	color:#EEEEEE;
+	border-bottom-color: rgb(20,20,20);
+
+}
+.accordion-container.dark label:hover {
+	background:rgb(50,50,50);
+	color:#FFF;
+}
+.accordion-container.dark input:checked + label,
+.accordion-container.dark input:checked + label:hover{
+	color: #FFFFFF;
+	background:rgb(50,50,50);
+}
+.accordion-container.dark article {
+	background: rgb(20,20,20);
+
+}
+.accordion-container.dark article p {
+	color:#FFF;
+}
+.accordion-container.dark .accordion-panel i.background{
+	color:rgba(255,255,255,0.15);
+	-webkit-border-radius: 99px;
+	-moz-border-radius: 99px;
+	border-radius: 99px;
+	border:4px solid rgba(255,255,255,0.15);
+	-webkit-transition: all .5s;
+	-ms-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.accordion-container.dark article button:hover{
+	background:rgb(50,50,50);
+	color:#FFF;
+}
+
+.accordion-container.pink label {
+	background:rgb(255,131,139);
+	color:#EEEEEE;
+	border-bottom-color: rgb(227,70,96);
+
+}
+.accordion-container.pink label:hover {
+	background:rgb(227,70,96);
+	color:#FFF;
+}
+.accordion-container.pink input:checked + label,
+.accordion-container.pink input:checked + label:hover{
+	color: #FFFFFF;
+	background:rgb(227,70,96);
+}
+.accordion-container.pink article {
+	background: rgb(245,240,240);
+
+}
+.accordion-container.pink article p {
+	color:#999;
+	z-index:5;
+}
+
+.accordion-container.pink article button:hover{
+	background:rgb(255,131,139);
+	color:#FFF;
+}
+
+@media (min-width: 1200px) {
+.accordion-container {
+  width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+.accordion-container article {
+	padding: 0px 45px 5px 35px;
+}
+}

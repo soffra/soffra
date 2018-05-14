@@ -19,7 +19,7 @@ class ClimbList extends React.Component {
   }
 
   fetchClimbList() {
-    return fetch('http://localhost:3000/climbList')
+    return fetch('https://still-falls-59382.herokuapp.com/climbList')
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({

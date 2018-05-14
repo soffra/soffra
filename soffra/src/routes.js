@@ -8,7 +8,7 @@ import Test from './test';
 const Routes = () => (
   <Router>
     <switch>
-      <Route exact path='/landing' component={Landing} />
+      <Route exact path='/' component={Landing} />
       <Route path='/test' component= {Test}/>
       <Route path='/climbList/:state' component={ClimbList} />
       <Route path='/climb/:climbName' component={Climb} />

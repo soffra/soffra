@@ -7,7 +7,7 @@ import ClimbList from './climbList/climbList';
 const Routes = () => (
   <Router>
     <switch>
-      <Route exact path='/' component={Landing} />
+      {/* <Route exact path='/' component={Landing} /> */}
       <Route path='/climbList/:state' component={ClimbList} />
       <Route path='/climb/:climbName' component={Climb} />
     </switch>

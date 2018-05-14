@@ -14,4 +14,4 @@ module.exports = function () {
     function findAllClimbsForState (state) {
         return ClimbDataModel.find({state: state});
     }
-}
+};

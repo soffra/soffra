@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Climb from './climb/climb';
 import Landing from './landing/landing';
 import ClimbList from './climbList/climbList';
-import Test from 'test';
+import Test from './test';
 
 const Routes = () => (
   <Router>

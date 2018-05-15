@@ -1,6 +1,6 @@
 import React from 'react';
 import ClimbListTitle from './climbListTitleComponent';
-import ClimbListBreadCrumbs from './climbListBreadCrumbsCoponent';
+import ClimbListBreadCrumbs from './climbListBreadCrumbsComponent';
 import ClimbListItem from './ClimbListItemComponent';
 import Footer from '../reusableComponents/footerComponent';
 import Header from '../reusableComponents/headerComponent';

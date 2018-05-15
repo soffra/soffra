@@ -12,7 +12,7 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "proxy": "https://still-falls-59382.herokuapp.com",
+    "proxy": "https://localhost:5000",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
